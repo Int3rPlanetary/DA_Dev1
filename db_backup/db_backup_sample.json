@@ -1,0 +1,133 @@
+{
+  "system_settings": [
+    {
+      "id": 1,
+      "accessibility_menu_enabled": false,
+      "maintenance_mode": false,
+      "registration_enabled": true,
+      "last_updated": "2025-03-09 21:29:17.635921"
+    }
+  ],
+  "system_settings_schema": [
+    {
+      "name": "id",
+      "type": "INTEGER",
+      "nullable": false,
+      "default": "nextval('system_settings_id_seq'::regclass)"
+    },
+    {
+      "name": "accessibility_menu_enabled",
+      "type": "BOOLEAN",
+      "nullable": true,
+      "default": "false"
+    },
+    {
+      "name": "maintenance_mode",
+      "type": "BOOLEAN",
+      "nullable": true,
+      "default": "false"
+    },
+    {
+      "name": "registration_enabled",
+      "type": "BOOLEAN",
+      "nullable": true,
+      "default": "true"
+    },
+    {
+      "name": "last_updated",
+      "type": "TIMESTAMP WITHOUT TIME ZONE",
+      "nullable": true,
+      "default": "CURRENT_TIMESTAMP"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@example.com",
+      "password_hash": "[REDACTED]",
+      "is_active": true,
+      "is_admin": true,
+      "created_at": "2025-03-09 21:29:17.635921",
+      "last_login": "2025-03-09 21:29:17.635921",
+      "avatar_url": null,
+      "bio": "System Administrator",
+      "dap_balance": 1000,
+      "level": 10
+    }
+  ],
+  "users_schema": [
+    {
+      "name": "id",
+      "type": "INTEGER",
+      "nullable": false,
+      "default": "nextval('users_id_seq'::regclass)"
+    },
+    {
+      "name": "username",
+      "type": "VARCHAR",
+      "nullable": false,
+      "default": null
+    },
+    {
+      "name": "email",
+      "type": "VARCHAR",
+      "nullable": false,
+      "default": null
+    },
+    {
+      "name": "password_hash",
+      "type": "VARCHAR",
+      "nullable": false,
+      "default": null
+    },
+    {
+      "name": "is_active",
+      "type": "BOOLEAN",
+      "nullable": true,
+      "default": "true"
+    },
+    {
+      "name": "is_admin",
+      "type": "BOOLEAN",
+      "nullable": true,
+      "default": "false"
+    },
+    {
+      "name": "created_at",
+      "type": "TIMESTAMP WITHOUT TIME ZONE",
+      "nullable": true,
+      "default": "CURRENT_TIMESTAMP"
+    },
+    {
+      "name": "last_login",
+      "type": "TIMESTAMP WITHOUT TIME ZONE",
+      "nullable": true,
+      "default": null
+    },
+    {
+      "name": "avatar_url",
+      "type": "VARCHAR",
+      "nullable": true,
+      "default": null
+    },
+    {
+      "name": "bio",
+      "type": "TEXT",
+      "nullable": true,
+      "default": null
+    },
+    {
+      "name": "dap_balance",
+      "type": "INTEGER",
+      "nullable": true,
+      "default": "0"
+    },
+    {
+      "name": "level",
+      "type": "INTEGER",
+      "nullable": true,
+      "default": "1"
+    }
+  ]
+}
